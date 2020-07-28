@@ -1,6 +1,6 @@
 {
   "store.home": {
-    "blocks": ["rich-text"]
+    "blocks": ["rich-text", "sandbox.title", "sandbox"]
   },
   "rich-text": {
     "props": {

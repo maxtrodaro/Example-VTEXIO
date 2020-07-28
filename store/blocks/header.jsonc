@@ -15,13 +15,6 @@
     "children": ["flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": false,
-      "preventVerticalStretch": false,
-      "fullWidth": true
-    },
     "children": ["sandbox.header"]
   },
   "flex-layout.col#spacer": {
