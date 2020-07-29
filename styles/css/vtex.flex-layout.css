@@ -1,0 +1,16 @@
+.flexRow {
+  background: #5a0080;
+}
+
+.flexRowContent--footer-bottom {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .flexRowContent--footer-bottom {
+    max-width: 1240px;
+  }
+}
