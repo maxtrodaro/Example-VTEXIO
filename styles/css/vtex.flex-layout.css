@@ -2,7 +2,16 @@
   background: #5a0080;
 }
 
-.flexRowContent--footer-bottom {
+.flexRow--footer-bottom {
+  border-top: 1px solid #8600a7;
+}
+
+.flexRowContent--footer-middle {
+  padding: 20px 0;
+}
+
+.flexRowContent--footer-bottom,
+.flexRowContent--footer-middle {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -10,7 +19,8 @@
 }
 
 @media (min-width: 1280px) {
-  .flexRowContent--footer-bottom {
+  .flexRowContent--footer-bottom,
+  .flexRowContent--footer-middle {
     max-width: 1240px;
   }
 }

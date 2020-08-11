@@ -5,6 +5,7 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-desktop",
+      "flex-layout.row#footer-middle",
       "flex-layout.row#footer-bottom",
       "flex-layout.row#footer-copy",
       "flex-layout.row#footer-image"
@@ -17,6 +18,44 @@
       "fullWidth": "true"
     }
   },
+  "flex-layout.row#footer-middle": {
+    "children": ["link#footerMiddle-left", "link#footerMiddle-right"],
+    "props": {
+      "blockClass": "footer-middle",
+      "fullWidth": "true"
+    }
+  },
+  "link#footerMiddle-left": {
+    "children": ["accepted-payment-methods"],
+    "props": {
+      "label": "Formas de pagamento",
+      "href": "#",
+      "font": "t-heading-5",
+      "blockClass": "footer-middle"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  },
+  "link#footerMiddle-right": {
+    "children": ["social-networks"],
+    "props": {
+      "label": "Sua compra 100% segura",
+      "href": "#",
+      "font": "t-heading-5",
+      "blockClass": "footer-middle"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" }
+      ]
+    }
+  },
   "flex-layout.row#footer-bottom": {
     "children": ["rich-text#footer-left", "rich-text#footer-right"],
     "props": {
@@ -27,14 +66,12 @@
   "rich-text#footer-left": {
     "props": {
       "text": "Os descontos anunciados refletem o valor máximo considerando o pagamento no boleto bancário. O desconto será menor e os valores serão alterados se o pagamento ocorrer por outros meios. Todos os preços e condições comerciais estão sujeitos a alteração sem aviso prévio. O preço válido será garantido após a finalização da compra. A simples inclusão de produtos no 'carrinho de compras' não implica em sua reserva pelo consumidor.",
-      "font": "t-body",
       "blockClass": "help-message"
     }
   },
   "rich-text#footer-right": {
     "props": {
       "text": "Os descontos anunciados refletem o valor máximo considerando o pagamento no boleto bancário. O desconto será menor e os valores serão alterados se o pagamento ocorrer por outros meios. Todos os preços e condições comerciais estão sujeitos a alteração sem aviso prévio. O preço válido será garantido após a finalização da compra. A simples inclusão de produtos no 'carrinho de compras' não implica em sua reserva pelo consumidor.",
-      "font": "t-body",
       "blockClass": "help-message"
     }
   },
@@ -48,7 +85,6 @@
   "rich-text#footer-bottom": {
     "props": {
       "text": "© Copyright 2020 BUD Comércio de Eletrodomésticos LTDA - Todos os direitos reservados",
-      "font": "t-body",
       "blockClass": "help-copyright"
     }
   },
