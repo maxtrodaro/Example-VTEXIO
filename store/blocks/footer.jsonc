@@ -4,26 +4,98 @@
   },
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-desktop",
+      "flex-layout.row#footer-top",
       "flex-layout.row#footer-middle",
       "flex-layout.row#footer-bottom",
       "flex-layout.row#footer-copy",
       "flex-layout.row#footer-image"
     ]
   },
-  "flex-layout.row#footer-desktop": {
-    "children": [],
+  "flex-layout.row#footer-top": {
+    "children": ["vtex.menu@2.x:menu#footer"],
     "props": {
-      "blockClass": "footer-copyright",
+      "blockClass": "footer-top",
       "fullWidth": "true"
     }
   },
+  "vtex.menu@2.x:menu#footer": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-privacity",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://atendimento.compracerta.com.br/seguranca-e-privacidade/seguranca-e-privacidade/politica-de-privacidade-e-seguranca",
+            "noFollow": false,
+            "tagTitle": "privacity",
+            "text": "Política de Privacidade"
+          }
+        },
+        {
+          "id": "menu-item-terms",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://atendimento.compracerta.com.br/clube-compra-certa/regulamentos/termos-e-condicoes-de-uso",
+            "noFollow": false,
+            "tagTitle": "terms",
+            "text": "Termos e condições de uso"
+          }
+        },
+        {
+          "id": "menu-item-helper",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://atendimento.compracerta.com.br/clube-compra-certa",
+            "noFollow": false,
+            "tagTitle": "helper",
+            "text": "Tire suas dúvidas"
+          }
+        },
+        {
+          "id": "menu-item-won",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://atendimento.compracerta.com.br/clube-compra-certa/regulamentos/regulamento-convide-e-ganhe-nao-colaborador",
+            "noFollow": false,
+            "tagTitle": "won",
+            "text": "Regulamento Convide e Ganhe"
+          }
+        },
+        {
+          "id": "menu-item-actions",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://atendimento.compracerta.com.br/regulamentos",
+            "noFollow": false,
+            "tagTitle": "actions",
+            "text": "Regulamentos de Ações Promocionais"
+          }
+        }
+      ]
+    },
+    "children": ["social-networks"]
+  },
   "flex-layout.row#footer-middle": {
-    "children": ["link#footerMiddle-left", "link#footerMiddle-right"],
     "props": {
       "blockClass": "footer-middle",
       "fullWidth": "true"
-    }
+    },
+    "children": ["link#footerMiddle-left", "link#footerMiddle-right"]
   },
   "link#footerMiddle-left": {
     "children": ["accepted-payment-methods"],
