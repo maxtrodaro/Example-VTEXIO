@@ -6,11 +6,28 @@
   font-weight: 700;
 }
 
+@media (max-width: 767px) {
+  .styledLink {
+    text-decoration: underline;
+  }
+  .styledLinkContainer {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
 .menuContainer {
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .styledLinkContainer {
   margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .menuItem {
+    width: 100%;
+  }
 }

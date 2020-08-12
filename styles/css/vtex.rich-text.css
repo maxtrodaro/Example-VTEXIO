@@ -3,3 +3,7 @@
   font-size: 12px;
   justify-content: space-around;
 }
+
+.container--help-copyright {
+  text-align: center;
+}

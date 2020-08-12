@@ -12,7 +12,9 @@
 
 .flexRowContent--footer-bottom,
 .flexRowContent--footer-middle,
-.flexRowContent--footer-top {
+.flexRowContent--footer-top,
+.flexRowContent--footer-copy,
+.flexRowContent--footer-image {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -25,6 +27,12 @@
   padding: 15px 0;
 }
 
+@media (max-width: 767px) {
+  .flexRow--footer-top {
+    background-color: #5a0080;
+  }
+}
+
 .flexRowContent--footer-top {
   align-items: center;
 }
@@ -32,7 +40,15 @@
 @media (min-width: 1280px) {
   .flexRowContent--footer-bottom,
   .flexRowContent--footer-middle,
-  .flexRowContent--footer-top {
+  .flexRowContent--footer-top,
+  .flexRowContent--footer-copy,
+  .flexRowContent--footer-image {
     max-width: 1240px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flexRowContent--footer-top .flexCol {
+    align-items: flex-end;
   }
 }
