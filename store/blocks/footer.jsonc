@@ -12,11 +12,23 @@
     ]
   },
   "flex-layout.row#footer-top": {
-    "children": ["vtex.menu@2.x:menu#footer"],
+    "children": [
+      "flex-layout.col#footer-links",
+      "flex-layout.col#footer-social-networks"
+    ],
     "props": {
       "blockClass": "footer-top",
       "fullWidth": "true"
     }
+  },
+  "flex-layout.col#footer-links": {
+    "children": ["vtex.menu@2.x:menu#footer"],
+    "props": {
+      "width": "93%"
+    }
+  },
+  "flex-layout.col#footer-social-networks": {
+    "children": ["social-networks"]
   },
   "vtex.menu@2.x:menu#footer": {
     "props": {
@@ -87,8 +99,7 @@
           }
         }
       ]
-    },
-    "children": ["social-networks"]
+    }
   },
   "flex-layout.row#footer-middle": {
     "props": {

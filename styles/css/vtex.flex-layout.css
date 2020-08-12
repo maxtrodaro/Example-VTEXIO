@@ -11,16 +11,28 @@
 }
 
 .flexRowContent--footer-bottom,
-.flexRowContent--footer-middle {
+.flexRowContent--footer-middle,
+.flexRowContent--footer-top {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
 }
 
+.flexRow--footer-top {
+  background-color: #8600a7;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.flexRowContent--footer-top {
+  align-items: center;
+}
+
 @media (min-width: 1280px) {
   .flexRowContent--footer-bottom,
-  .flexRowContent--footer-middle {
+  .flexRowContent--footer-middle,
+  .flexRowContent--footer-top {
     max-width: 1240px;
   }
 }
